@@ -1,0 +1,20 @@
+{
+  "id": "records_wing",
+  "title": "The Records Wing",
+  "rooms": {
+    "1": {
+      "name": "Gallery Room",
+      "map": "gallery.txt",
+      "objects": "gallery_objects.json",
+      "intro": "You wake on a cold gallery floor. The exit is sealed. A note on the door says: FINISH ALL TASKS.",
+      "objective": "Finish your tasks. Some need help from the Archive."
+    },
+    "2": {
+      "name": "Archive Room",
+      "map": "archive.txt",
+      "objects": "archive_objects.json",
+      "intro": "Dust and paper. The exit is sealed. A note on the door says: FINISH ALL TASKS.",
+      "objective": "Finish your tasks. Some need help from the Gallery."
+    }
+  }
+}

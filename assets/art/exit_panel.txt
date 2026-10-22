@@ -1,0 +1,9 @@
+.============================.
+||   EMERGENCY EXIT  - 01   ||
+||                          ||
+||   STATUS:   SEALED       ||
+||                          ||
+||   COMPLETE ALL TASKS     ||
+||   IN BOTH ROOMS TO OPEN  ||
+||                          ||
+'============================'

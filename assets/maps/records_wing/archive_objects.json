@@ -1,0 +1,94 @@
+[
+  {
+    "id": "reading_table",
+    "name": "Reading Table",
+    "at": [[26, 4], [27, 4], [28, 4], [29, 4], [30, 4],
+           [26, 5], [27, 5], [28, 5], [29, 5], [30, 5]],
+    "kind": "examine",
+    "text": ["A long reading table buried in paper.",
+             "One yellowed document lies open on top. (Press F to read it.)"],
+    "art": "archive_document",
+    "inspect": ["The handwriting is careful and deliberate."],
+    "clue": "Archive document: 'First comes the light. Then the means of passage. The watcher shall always remain last.'"
+  },
+  {
+    "id": "loose_binder",
+    "name": "Bookshelf (a binder sticks out)",
+    "at": [[21, 12]],
+    "kind": "container",
+    "text": ["One binder sticks out further than the rest.", "You pull it free. A note slips out!"],
+    "item": "Archivist's Note",
+    "after": ["Just old binders now."],
+    "reveal_art": "archivist_note",
+    "inspect": ["The note is addressed to whoever wakes up here."],
+    "clue": "Archivist's note: the cabinet code is hidden in the gallery paintings. Ask your partner."
+  },
+  {
+    "id": "clerk_desk",
+    "name": "Clerk's Desk",
+    "at": [[40, 10], [41, 10]],
+    "kind": "examine",
+    "text": ["A clerk's desk with an open logbook. (Press F to read it.)"],
+    "art": "logbook",
+    "inspect": ["The last page has a short note about the gallery."],
+    "clue": "Clerk's logbook: the gallery Display Case code is Z first, then X, then Y."
+  },
+  {
+    "id": "gallery_door",
+    "name": "Gallery Door",
+    "at": [[0, 7]],
+    "kind": "examine",
+    "text": ["A door marked GALLERY. It's locked from the other side.",
+             "Your partner is somewhere beyond it."]
+  },
+  {
+    "id": "a_wires",
+    "name": "Wiring Panel",
+    "at": [[30, 1]],
+    "kind": "task",
+    "task": "wires",
+    "title": "Fix Wiring",
+    "text": ["The panel cover hangs open. Four wires are loose."]
+  },
+  {
+    "id": "a_download",
+    "name": "Archive Terminal",
+    "at": [[48, 12]],
+    "kind": "task",
+    "task": "download",
+    "title": "Download Data",
+    "text": ["An old terminal: DOWNLOAD RECORDS FOR EXIT CONTROL."],
+    "seconds": 6
+  },
+  {
+    "id": "a_breaker",
+    "name": "Fuse Box",
+    "at": [[1, 13]],
+    "kind": "task",
+    "task": "breaker",
+    "title": "Reset Breakers",
+    "text": ["A fuse box with ten numbered switches, all tripped."]
+  },
+  {
+    "id": "a_code",
+    "name": "Archive Cabinet",
+    "at": [[45, 2], [46, 2]],
+    "kind": "task",
+    "task": "code",
+    "title": "Open Cabinet",
+    "text": ["A steel cabinet with a 3-digit keypad."],
+    "art": "keypad",
+    "inspect": ["Three digits. The archivist must have left a note."],
+    "answer": "246",
+    "hint": "The numbers are in the gallery. The order is in the archive."
+  },
+  {
+    "id": "exit_door",
+    "name": "Exit Door",
+    "at": [[24, 14]],
+    "kind": "exit",
+    "text": ["The exit door is sealed. A panel says: COMPLETE ALL TASKS."],
+    "art": "exit_panel",
+    "inspect": ["The exit unlocks when the team finishes every task in both rooms."]
+  }
+]

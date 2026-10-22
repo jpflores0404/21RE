@@ -1,0 +1,118 @@
+[
+  {
+    "id": "painting_watcher",
+    "name": "Painting: The Watcher",
+    "at": [[6, 1]],
+    "kind": "examine",
+    "text": ["A painting of a single, unblinking eye.",
+             "A small brass plate is fixed beneath the frame. (Press F to look closer.)"],
+    "art": "painting_watcher",
+    "inspect": ["The brass plate is engraved:  THE WATCHER - 6"],
+    "clue": "Painting 'The Watcher' (an eye) is marked 6."
+  },
+  {
+    "id": "painting_key",
+    "name": "Painting: The Key",
+    "at": [[17, 1]],
+    "kind": "examine",
+    "text": ["A painting of an ornate iron key resting on velvet.",
+             "A small brass plate is fixed beneath the frame. (Press F to look closer.)"],
+    "art": "painting_key",
+    "inspect": ["The brass plate is engraved:  THE KEY - 4"],
+    "clue": "Painting 'The Key' is marked 4."
+  },
+  {
+    "id": "painting_lantern",
+    "name": "Painting: The Lantern",
+    "at": [[28, 1]],
+    "kind": "examine",
+    "text": ["A painting of an old oil lantern. Its flame looks almost real.",
+             "A small brass plate is fixed beneath the frame. (Press F to look closer.)"],
+    "art": "painting_lantern",
+    "inspect": ["The brass plate is engraved:  THE LANTERN - 2"],
+    "clue": "Painting 'The Lantern' is marked 2."
+  },
+  {
+    "id": "bench",
+    "name": "Viewing Bench",
+    "at": [[11, 9], [12, 9], [23, 9], [24, 9]],
+    "kind": "examine",
+    "text": ["A worn velvet viewing bench. Someone sat here a long time ago."]
+  },
+  {
+    "id": "pedestal",
+    "name": "Empty Pedestal",
+    "at": [[18, 11]],
+    "kind": "container",
+    "text": ["A card reads: 'EXHIBIT REMOVED FOR RESTORATION.'",
+             "Something is taped under the edge of the pedestal..."],
+    "item": "Staff Keycard",
+    "after": ["Just an empty pedestal now."]
+  },
+  {
+    "id": "curator_desk",
+    "name": "Curator's Desk",
+    "at": [[41, 8], [42, 8]],
+    "kind": "container",
+    "text": ["You slide open the desk drawer...", "There's a folded note inside!"],
+    "item": "Curator's Note",
+    "after": ["The drawer is empty now."],
+    "reveal_art": "curator_note",
+    "inspect": ["Three equations, scribbled in a hurry."],
+    "clue": "Curator's note: Display Case code uses X = 14 - 9, Y = 3 x 3, Z = 8 + 4. The archive knows the order."
+  },
+  {
+    "id": "g_wires",
+    "name": "Wiring Panel",
+    "at": [[40, 1]],
+    "kind": "task",
+    "task": "wires",
+    "title": "Fix Wiring",
+    "text": ["The panel cover hangs open. Four wires are loose."]
+  },
+  {
+    "id": "g_swipe",
+    "name": "Card Reader",
+    "at": [[49, 9]],
+    "kind": "task",
+    "task": "swipe",
+    "title": "Swipe Card",
+    "text": ["A card reader blinks red beside the RESTRICTED door."],
+    "needs_item": "Staff Keycard",
+    "locked_text": "It needs a staff keycard. Search the gallery."
+  },
+  {
+    "id": "g_code",
+    "name": "Display Case",
+    "at": [[46, 12]],
+    "kind": "task",
+    "task": "code",
+    "title": "Unlock Display Case",
+    "text": ["A glass display case with a 4-digit keypad."],
+    "art": "keypad",
+    "inspect": ["Four digits. The curator must have left the code somewhere."],
+    "answer": "1259",
+    "hint": "Use the curator's note. Your partner knows the order."
+  },
+  {
+    "id": "g_upload",
+    "name": "Gallery Terminal",
+    "at": [[37, 6]],
+    "kind": "task",
+    "task": "upload",
+    "title": "Upload Data",
+    "text": ["A dusty computer terminal: UPLOAD RECORDS TO EXIT CONTROL."],
+    "needs_task": "a_download",
+    "locked_text": "NO DATA TO UPLOAD. Your partner must download the records in the Archive first.",
+    "seconds": 6
+  },
+  {
+    "id": "exit_door",
+    "name": "Exit Door",
+    "at": [[27, 14]],
+    "kind": "exit",
+    "text": ["The exit door is sealed. A panel says: COMPLETE ALL TASKS."],
+    "art": "exit_panel",
+    "inspect": ["The exit unlocks when the team finishes every task in both rooms."]
+  }
+]

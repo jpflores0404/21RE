@@ -1,0 +1,41 @@
+MAP 1 - THE RECORDS WING                         Task 1.3 - Owner: M3 - Due: Oct 26
+Max size 50 x 15 (fits beside the side panel on an 80 x 24 terminal)
+
+PLAYER 1 - GALLERY ROOM
+##################################################
+#.....P..........P..........P...........%........#   P = 3 paintings (Watcher, Key, Lantern)
+#................................................#   % (40,1) = Wiring Panel      [TASK]
+#................................................#
+#.......,,,,,,,,,,,,,,,,,,,,.....................#   ,,, = carpet in the main hall
+#.......,,,,,,,,,,,,,,,,,,,,......################
+#.......,,,,,,,,,,,,,,,,,,,,......#..%...........#   % (37,6) = Gallery Terminal  [TASK: upload]
+#.................................#..............#
+#.................................#......DD......#   DD = Curator's Desk (note inside)
+#..........bb..........bb.........#..............+   + (49,9) = Card Reader at restricted door [TASK]
+#................................./..............#   / = doorway into the curator's office
+#..@..............o...............#..............#   o = pedestal (keycard taped underneath)
+#.................................#...........C..#   C (46,12) = Display Case keypad [TASK]
+#.................................#..............#
+###########################=######################   = = shared EXIT
+
+PLAYER 2 - ARCHIVE ROOM
+##################################################
+#.............................%.....#............#   % (30,1) = Wiring Panel      [TASK]
+#....|...|...|...|...|..............#........CC..#   CC = Archive Cabinet keypad  [TASK]
+#....|...|...|...|...|..............#............#   | = bookshelves (one has a loose binder)
+#....|...|...|...|...|....TTTTT...../............#   TTTTT = reading table (archive document)
+#....|...|...|...|...|....TTTTT.....#............#
+#....|...|...|...|...|..............#............#
++...................................##############   + = Gallery door (locked, flavour only)
+#................................................#
+#....|...|...|...|...|....,,,,,,.................#
+#....|...|...|...|...|....,,,,,,........DD.......#   DD = Clerk's Desk (logbook)
+#....|...|...|...|...|....,,,,,,.@...............#
+#....|...|...|...|...|....,,,,,,................%#   % (48,12) = Archive Terminal [TASK: download]
+#%...............................................#   % (1,13) = Fuse Box          [TASK: breakers]
+########################=#########################   = = shared EXIT
+
+Design notes
+- Paintings and the exit are placed so both rooms "point" at the same exit.
+- Red herrings: viewing benches, gallery door, plain bookshelves.
+- Task stations are spread out so players walk around the whole room.
