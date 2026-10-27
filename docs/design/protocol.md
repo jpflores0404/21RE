@@ -1,5 +1,7 @@
 # Network Protocol Draft
 
+> Inherited baseline reference, reviewed October 23, 2026. This describes the current alternate design, not approval of deviations from the master. Read [the audit](../REPOSITORY_AUDIT.md) and [proposed two-developer roadmap](../LEARNING_ROADMAP.md) before implementation. John confirmed the four grading phases; original four-person staffing and reduced campaign are not the current plan.
+
 **Task 1.10 · Owner: M2 · Due: Oct 28**
 
 **Transport:** TCP on port 5050. Each message is one line of JSON ending in `\n`.

@@ -1,176 +1,90 @@
-# 2R1E — Two Rooms, One Exit: Weekly Progress Report
+# 2R1E actual check-in report
 
-> Copy this file once per check-in, e.g. `docs/progress_reports/week2_nov09.md`.
-> Fill in every section. Write "None" instead of leaving a section empty.
+Status: unfilled template. Copy for an **actual** check-in, e.g. `progress_reports/2026-10-26-check-in.md`. Fill with observed work only. Leave unknown facts marked pending; do not prefill later weeks as complete.
 
----
+## Report details
 
-## A. Report Information
-
-| Field | Value |
+| Field | Actual value |
 |---|---|
-| Section | __________ |
-| Game title | 2R1E — Two Rooms, One Exit |
-| Dev week | ☐ Week 1 ☐ Week 2 ☐ Week 3 ☐ Week 4 |
-| Implementation phase | ☐ Phase 1 Pre-Production ☐ Phase 2 Core Build & Polish ☐ Phase 3 Puzzles & Multiplayer ☐ Phase 4 Integration & Submission |
-| Check-in date | __________ |
-| Reporting period | __________ to __________ |
-| Target progress for this week | ☐ 20% ☐ 50% ☐ 70% ☐ 100% |
-| Actual overall progress | ____ % |
-| Status | ☐ On track ☐ Slightly behind ☐ Behind (see section F) |
-| Prepared by | __________ |
+| Section | Pending |
+| Developer A | John Francis Espiritu |
+| Developer B | Partner, name to confirm |
+| Prepared by / reviewed by | Pending / pending |
+| Report date and covered dates | Pending |
+| Grading phase and check-in | Pending |
+| Approved roadmap step/scope | Pending, include approval reference |
+| Professor's target | Pending, see calendar below |
+| Measured acceptance | Pending: accepted items / approved total, show weighting if used |
+| Status | Not assessed |
 
-### Team members
-
-| Code | Name | Role |
+| Phase | Confirmed check-ins, 2026 | Target, not actual progress |
 |---|---|---|
-| M1 | | Project Lead / Game Systems |
-| M2 | | Networking Engineer |
-| M3 | | Level & Puzzle Designer |
-| M4 | | UI/UX, Art & QA/Docs |
+| Dev Week 1 | October 26 and 28 | 20% |
+| Dev Week 2 | November 4, 9 and 11 | 50% |
+| Dev Week 3 | November 16 and 18 | 70% |
+| Dev Week 4 | November 23 and 25 | 100% |
 
----
+## What changed since the previous check-in
 
-## B. Summary
+State actual new behavior, fixes and learning in plain language. Separate inherited functionality from implementation done during this period. Studying existing code counts as learning, not writing that feature this week. State AI assistance accurately.
 
-*2–4 sentences: what the game can do now that it could not do at the last check-in.*
-
-> Example: "Both rooms of Map 1 are now walkable with wall and furniture collision. Players can face objects, read dialogue, and inspect close-ups. 18 movement and interaction tests pass. The network prototype can send messages between two laptops."
-
-________________________________________________________________________
-
----
-
-## C. Phase Checklist
-
-*Copy the "Definition of done" list for the current phase from `IMPLEMENTATION_PLAN.md` and tick what is finished.*
-
-| Phase item | Done? | Notes |
-|---|---|---|
-| | ☐ | |
-| | ☐ | |
-| | ☐ | |
-| | ☐ | |
-| | ☐ | |
-
----
-
-## D. Task Progress per Member
-
-*One row per task from the implementation plan that was due at or before this check-in.*
-
-| Task # | Task | Owner | Due | Status | % done | Evidence (file, commit, screenshot) |
-|---|---|---|---|---|---|---|
-| | | | | ☐ Done ☐ In progress ☐ Not started ☐ Blocked | | |
-| | | | | ☐ Done ☐ In progress ☐ Not started ☐ Blocked | | |
-| | | | | ☐ Done ☐ In progress ☐ Not started ☐ Blocked | | |
-| | | | | ☐ Done ☐ In progress ☐ Not started ☐ Blocked | | |
-| | | | | ☐ Done ☐ In progress ☐ Not started ☐ Blocked | | |
-| | | | | ☐ Done ☐ In progress ☐ Not started ☐ Blocked | | |
-
-### Individual contributions
-
-**M1 — __________**
-- Completed:
-- In progress:
-- Hours spent: ____
-
-**M2 — __________**
-- Completed:
-- In progress:
-- Hours spent: ____
-
-**M3 — __________**
-- Completed:
-- In progress:
-- Hours spent: ____
-
-**M4 — __________**
-- Completed:
-- In progress:
-- Hours spent: ____
-
----
-
-## E. Demonstration
-
-*What will be shown live at this check-in. List the exact steps so anyone in the team can run the demo.*
-
-| # | What we show | How to run it | Presenter |
+| Category | Actual work | Developer / reviewer | Evidence and date |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| Inherited baseline reviewed | Pending | Pending | Baseline commit + relevant source |
+| Implemented/changed this period | Pending | Pending | Actual diff/commit, feature note and test |
+| Code understood and demonstrated | Pending | Pending | Function trace or small exercise and reviewer result |
+| Still in progress / blocked | Pending | Pending | Remaining acceptance condition |
 
-**Screenshots / evidence:** *(paste terminal screenshots, map sketches, or diagrams here)*
+## Small implementation steps and explanations
 
----
-
-## F. Testing
-
-| Item | Result |
-|---|---|
-| Unit tests run (`python3 -m unittest -v`) | ____ passed / ____ failed / ☐ N/A (Week 1) |
-| New tests added this week | |
-| Manual tests / playtests done | |
-| Platforms tested | ☐ macOS ☐ Linux ☐ Two machines over LAN |
-
-### Bugs found
-
-| ID | Description | Severity (High/Med/Low) | Owner | Status |
+| Roadmap step | File and function | Inputs/output and changed state explained? | Acceptance result | Feature note |
 |---|---|---|---|---|
-| | | | | |
-| | | | | |
+| Pending | Pending | Pending | Not assessed | Pending |
 
----
+Use `FEATURE_NOTE_TEMPLATE.md` for every implemented feature. Cover all changed files/functions, important branches, an example, OS connection, failures and tests. Attach actual source references; do not invent a missing test file or commit.
 
-## G. Issues, Blockers and Changes to the Plan
+## Both developers' learning evidence
 
-| Issue / blocker | Effect on schedule | Action taken / needed | Owner |
-|---|---|---|---|
-| | | | |
+| Developer | Function/concept explained | Valid/invalid input traced | Small attempt or change made | Partner's review/date |
+|---|---|---|---|---|
+| John Francis Espiritu | Pending | Pending | Pending | Pending |
+| Partner | Pending | Pending | Pending | Pending |
 
-**Changes to scope or design this week** *(e.g. a puzzle was simplified, a task moved to another member)*:
+Record unanswered questions. A prepared explanation or an AI-generated note alone does not prove comprehension. Each student must be able to locate the source and explain what the statements do.
 
-________________________________________________________________________
+## Checks actually run
 
----
+| Date / tester | OS and compiler or runtime version | Command or manual steps | Expected / actual | Evidence / limitations |
+|---|---|---|---|---|
+| Pending | Pending | Pending | Not run | Pending |
 
-## H. Plan for the Next Check-in
+Distinguish ordinary unit tests, modified/headless checks, localhost sockets, interactive terminal play, and two separate Linux computers. Record failures and skipped checks. A same-computer socket test is not a two-machine LAN test.
 
-**Next check-in date:** __________   **Target progress:** ____ %
+## Live check-in demonstration
 
-| Task # | Task | Owner | Due |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| Step | Exact action/command | Expected visible result | Presenter | Actual result |
+|---|---|---|---|---|
+| Pending | Pending | Pending | Pending | Not demonstrated |
 
----
+Attach actual screenshots/logs where available. Record playtest duration only when measured. Explain one real OS concept by pointing at the implementing function.
 
-## I. Sign-off
+## Bugs, risks and approved deviations
 
-| Member | Signature | Date |
+| Issue and reproduction | Expected / actual | Impact | Owner | State / evidence |
+|---|---|---|---|---|
+| Pending | Pending | Pending | Pending | Pending |
+
+Any change to scope, architecture or the approved plan: describe reason, effect, approving developer/date and revised acceptance. If no approval exists, mark it proposed. Never silently change the completion denominator to obtain a target percentage.
+
+## Next check-in
+
+Next date: pending. Next function/step: pending. Implementer/reviewer: pending. Dependency and acceptance check: pending. Required approval: pending or exact existing approval.
+
+## Review/sign-off
+
+| Developer | Reviewed implementation, evidence and learning record | Actual date |
 |---|---|---|
-| M1 | | |
-| M2 | | |
-| M3 | | |
-| M4 | | |
+| John Francis Espiritu | Pending | Pending |
+| Partner | Pending | Pending |
 
-**Instructor remarks:**
-
-________________________________________________________________________
-
-________________________________________________________________________
-
----
-
-## Appendix: What each week's report should focus on
-
-| Week | Phase | Main evidence to attach |
-|---|---|---|
-| Week 1 (Oct 26, 28) — 20% | Phase 1 Pre-Production | Concept doc, map sketches, tile legend, puzzle flow chart, wireframes, protocol draft, architecture diagram, task board screenshot |
-| Week 2 (Nov 4, 9, 11) — 50% | Phase 2 Core Build & Polish | Screenshots of each room, movement and interaction test output, network prototype demo, Week 2 playtest log |
-| Week 3 (Nov 16, 18) — 70% | Phase 3 Puzzles & Multiplayer | Two-player session on two machines, keypad solve, clue sharing, puzzle test output, Map 2 screenshot, Week 3 playtest log |
-| Week 4 (Nov 23, 25) — 100% | Phase 4 Integration & Submission | Full playthrough of both maps, final test report, documentation list, the tested `Section_2R1E.zip` |
+Instructor remarks: pending. Do not fill signatures, hours, reviews or acceptance outcomes on someone's behalf.

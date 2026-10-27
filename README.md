@@ -1,6 +1,18 @@
-> **Current plan revision, October 27, 2026:** The professor requires C. Development will target native Windows testing first and Linux acceptance. See [the C implementation plan](docs/C_IMPLEMENTATION_PLAN.md), which supersedes Python-specific future plans. The code and run commands below describe the inherited Python prototype; no C port has been implemented.
+> **Current direction, October 28, 2026:** The professor requires C, with Windows-first testing and Linux acceptance. See [the C implementation plan](docs/C_IMPLEMENTATION_PLAN.md). The first standalone C movement demo is implemented; the full campaign port is future work. The Python run commands below describe the inherited prototype.
 
 # 2R1E: Two Rooms, One Exit
+
+## First C movement demo and Week 1 submission
+
+The [C demo](src/movement_demo.c) supports WASD movement, terminal boundaries, resizing and clean exit. See the [build and run guide](docs/MOVEMENT_DEMO.md) and [Linux and Windows code explanation](docs/LINUX_WINDOWS_MOVEMENT_GUIDE.md). Windows checks passed; Linux compilation and terminal acceptance remain unverified. On Linux with a C compiler, use `sh scripts/run_movement_linux.sh --self-test` and then `sh scripts/run_movement_linux.sh`.
+
+The [game design draft](docs/deliverables/2026-10-28_GAME_DESIGN_DRAFT.docx) contains map sketches and proposed puzzles. The [Word code guide](docs/deliverables/C_MOVEMENT_LINUX_WINDOWS_GUIDE.docx) explains the movement source. The [actual Week 1 report draft](docs/progress_reports/2026-10-28_submission_draft.md) separates implemented behavior from future work. These drafts still need developer review and missing identification fields before submission.
+
+## Inherited Python prototype
+
+> **Review status, October 23, 2026:** the code below is an inherited single-map, peer-to-peer variant. It does not yet meet the original authoritative-server, three-map master plan. John Francis Espiritu confirmed four grading phases ending November 25, and the team has two developers. Runtime code has not been changed by this review.
+
+Start with [shared developer instructions](AGENTS.md) and [project memory](docs/PROJECT_MEMORY.md). Read the [repository audit](docs/REPOSITORY_AUDIT.md) for verified deviations, the [proposed learning roadmap](docs/LEARNING_ROADMAP.md) for small steps and confirmed check-ins, and the [beginner code guide](docs/CODE_GUIDE.md) to study existing functions. The [original master prompt](docs/MASTER_PROMPT.md) is preserved verbatim. Implementation phases still need explicit approval. Existing Week 1-4 reports are unverified imported drafts, not evidence of completed weekly work.
 
 A two-player co-op escape room that runs in the terminal. Each player wakes up in
 a different room. Like in **Among Us**, each player has a **task list**, and every
@@ -69,8 +81,11 @@ Task stations glow **yellow** on the map and turn **green** when done.
 | `docs/user_manual.md` | How to play, controls, tasks, troubleshooting, hints |
 | `docs/test_plan.md`, `docs/test_report.md` | What we tested and the results |
 | `docs/design/` | Concept, map sketches, tile legend, task & puzzle flow, wireframes, network protocol, architecture |
-| `docs/IMPLEMENTATION_PLAN.md` | The 4-week plan and team roles |
-| `docs/progress_reports/` | Weekly progress reports (Weeks 1-4) |
+| `docs/IMPLEMENTATION_PLAN.md` | Inherited four-role plan, retained as a historical reference |
+| `docs/LEARNING_ROADMAP.md` | Proposed two-developer learning plan using the confirmed four grading phases |
+| `docs/PROGRESS_REPORT_TEMPLATE.md` | Actual check-in evidence, implementation, tests and learning |
+| `docs/FEATURE_NOTE_TEMPLATE.md` | Required explanations for every changed file/function |
+| `docs/progress_reports/` | Unverified imported report drafts (Weeks 1-4) |
 | `docs/credits.md` | Team members and contributions |
 
 ## Project structure

@@ -1,5 +1,7 @@
 # C implementation plan revision
 
+October 28 status update: John subsequently approved the first standalone C movement demo and notes, limited to WASD, terminal bounds, resizing and clean exit. See [the run guide](MOVEMENT_DEMO.md) and [feature record](features/movement_demo.md). Windows checks passed; Linux compilation remains unverified. This does not approve the full campaign port. The dated proposal below records the original planning boundary.
+
 Decision recorded October 27, 2026, Asia/Manila. John Francis Espiritu reported the professor's requirement to develop the game in **C** and requested **Windows-first testing with Linux support**. He authorized this documentation revision and its GitHub push. This does not authorize implementing the port, installing tools, or reducing the campaign.
 
 ## Authority and baseline

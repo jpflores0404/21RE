@@ -1,5 +1,7 @@
 # Test Report
 
+> **Imported result claims, not current acceptance evidence.** The October 23 review did not reproduce the manual pass claims below. Native Windows discovery is blocked for two modules by missing curses; a controlled headless run passed 33 tests. Linux, interactive UI, separate-computer LAN and packaging remain unverified. See [current verification and limitations](REPOSITORY_AUDIT.md).
+
 **Task 4.3 · Owner: M4**
 
 ## 1. Automated tests

@@ -1,5 +1,7 @@
 # Game Concept — 2R1E: Two Rooms, One Exit
 
+> Inherited baseline reference, reviewed October 23, 2026. This describes the current alternate design, not approval of deviations from the master. Read [the audit](../REPOSITORY_AUDIT.md) and [proposed two-developer roadmap](../LEARNING_ROADMAP.md) before implementation. John confirmed the four grading phases; original four-person staffing and reduced campaign are not the current plan.
+
 **Task 1.1 · Owner: M1 · Due: Oct 26**
 
 ## Premise

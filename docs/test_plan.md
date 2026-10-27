@@ -1,5 +1,7 @@
 # Test Plan
 
+> Inherited baseline reference, reviewed October 23, 2026. This describes the current alternate design, not approval of deviations from the master. Read [the audit](REPOSITORY_AUDIT.md) and [proposed two-developer roadmap](LEARNING_ROADMAP.md) before implementation. John confirmed the four grading phases; original four-person staffing and reduced campaign are not the current plan.
+
 **Task 1.13 · Owner: M4 · Due: Oct 28**
 
 Automated tests use `unittest` (built in): `python3 -m unittest -v`.

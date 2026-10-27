@@ -2,6 +2,8 @@
 
 # 2R1E — Two Rooms, One Exit: Implementation Plan
 
+> Inherited baseline reference, reviewed October 23, 2026. This describes the current alternate design, not approval of deviations from the master. Read [the audit](REPOSITORY_AUDIT.md) and [proposed two-developer roadmap](LEARNING_ROADMAP.md) before implementation. John confirmed the four grading phases; original four-person staffing and reduced campaign are not the current plan.
+
 **Project:** 2R1E (Two Rooms, One Exit), a two-player co-op escape game played in the terminal
 **Gameplay in one line:** like the tasks in *Among Us*. Each player is locked in a different room with a task list. Some tasks need clues or items from the partner's room. When the shared **TOTAL TASKS** bar reaches 8/8 the exit opens, and both players must walk out to win.
 **Language / Stack:** Python 3.10+ standard library only (`curses`, `socket`, `threading`, `json`, `unittest`)

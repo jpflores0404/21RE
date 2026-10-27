@@ -1,5 +1,7 @@
 # 2R1E — Two Rooms, One Exit: Progress Report — Dev Week 1
 
+> **UNVERIFIED IMPORTED DRAFT, not a completed weekly report.** This file was already present in the October 23, 2026 baseline, before the check-in dates described below. Its completion percentages, contributions, meetings, tests, packaging and sign-offs have not been established by this review. Original wording is retained as a reference. Use [the actual-report template](../PROGRESS_REPORT_TEMPLATE.md), record work when it happens, and consult [the audit](../REPOSITORY_AUDIT.md).
+
 ## A. Report Information
 
 | Field | Value |
