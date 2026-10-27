@@ -1,3 +1,5 @@
+> **Current plan revision, October 27, 2026:** The professor requires C. Development will target native Windows testing first and Linux acceptance. See [the C implementation plan](docs/C_IMPLEMENTATION_PLAN.md), which supersedes Python-specific future plans. The code and run commands below describe the inherited Python prototype; no C port has been implemented.
+
 # 2R1E: Two Rooms, One Exit
 
 A two-player co-op escape room that runs in the terminal. Each player wakes up in

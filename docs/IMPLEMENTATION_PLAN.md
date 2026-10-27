@@ -1,3 +1,5 @@
+> **Superseded implementation direction, October 27, 2026:** See [the C implementation plan revision](C_IMPLEMENTATION_PLAN.md) for the required C language, Windows-first testing, Linux acceptance, two-developer scope and current campaign. The historical plan below remains a reference, not the current implementation contract.
+
 # 2R1E — Two Rooms, One Exit: Implementation Plan
 
 **Project:** 2R1E (Two Rooms, One Exit), a two-player co-op escape game played in the terminal
