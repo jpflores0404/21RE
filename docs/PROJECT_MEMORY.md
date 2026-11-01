@@ -1,5 +1,19 @@
 # Project memory
 
+## November 2 verification and handoff
+
+The approved C milestone is implemented. Final native MSVC and static Linux x86_64 musl builds both pass 3207 rule assertions and 31 protocol checks. The full two-socket campaign through Maps 1–2 into Map 3 passes on both final executables, including malformed/forged/stale input, fragmented/coalesced framing, busy port, third join, quit, abrupt disconnect, oversized incomplete lines and bounded slow-reader shutdown. Controlled Linux two-PTY Host/Join and native Windows console checks provide separate interface evidence. See [the report](progress_reports/2026-11-02_maps_1_2_milestone.md) and [run guide](CAMPAIGN_RUN_GUIDE.md).
+
+Earlier Windows builds hit Application Control error 4551. The final ordinary MSVC rebuild launches and passes the native checks without a policy change or bypass. Preserve the historical failure record, but do not describe the final build as currently blocked. No physical two-computer Linux LAN test, student teach-back, human puzzle fairness or professor acceptance has been established. Full Map 3 remains outside approval. Windows executables stay local; only source, documentation, tests and the Linux executable are intended for publication.
+
+## October 31 approved Maps 1 and 2 milestone
+
+John explicitly approved `plans/2026-10-31_MAPS_1_2_MILESTONE.md` in this chat with "approve". Scope: AI-assisted C implementation using subagents, three pairs of room layouts, completed Maps 1-2 puzzle chains, a walkable unfinished Map 3, main menu/tutorial, real socket communication between two visible local terminals, and short player messages. This replaces the earlier Map-1-only 50% boundary with John's named Maps-1-2 milestone, not a measured percentage of total engineering effort.
+
+Approved architecture: one owned background server process started by Host, plus two player clients over bounded JSON-line TCP; one authoritative state loop and private player views. Approved dependency: vendored cJSON v1.7.19 source/header and MIT license. No system tool/package installation. Existing MSVC and temporary Zig toolchain are reused. Windows executables stay local and excluded from Git; publish verified Linux executable, source, necessary tests/docs only. Preserve the older Windows movement demo.
+
+Puzzle authority: John's linked Google Doc retrieved October 31. Paintings 246, hatch final digits 259, statue B opens a real passage, calibration 2/3/4. Use the bracketed Three Blanks suggestion as curated word choices within the ordering clue, avoiding unfair exact-word grading. Map 3 gas, valve completion and final victory are deferred explicitly. Implementation/checks are in progress; consult the October 31 milestone report for final evidence. Student review and teach-back remain pending until performed.
+
 ## October 28 Linux movement study
 
 John requested Linux-compatible C movement code and a detailed Windows comparison for the professor explanation. The maintained `src/movement_demo.c` already contains its POSIX branch, so it was reused without duplicating or changing runtime functions. Added `scripts/run_movement_linux.sh` to build/run it with an existing Linux compiler, and `LINUX_WINDOWS_MOVEMENT_GUIDE.md` plus its Word study copy to explain libraries, functions, controls, terminal modes, rendering and cleanup.

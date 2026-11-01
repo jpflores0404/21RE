@@ -1,5 +1,7 @@
 # C implementation plan revision
 
+November 2 status: John approved the [October 31 Maps 1–2 plan](plans/2026-10-31_MAPS_1_2_MILESTONE.md), which supersedes the historical implementation proposals below. The C milestone now has six rooms, completed Maps 1–2 rules, two socket clients and an unfinished Map 3 preview. It uses small flat C modules, one executable with client/server modes, native MSVC and Linux build scripts, a monotonic platform clock, and pinned cJSON 1.7.19. Bounded short chat is included. See the [current report](progress_reports/2026-11-02_maps_1_2_milestone.md) for successful final Windows/Linux checks and remaining acceptance limits. This approval does not include full Map 3, gas or final victory. The original proposal below remains historical.
+
 October 28 status update: John subsequently approved the first standalone C movement demo and notes, limited to WASD, terminal bounds, resizing and clean exit. See [the run guide](MOVEMENT_DEMO.md) and [feature record](features/movement_demo.md). Windows checks passed; Linux compilation remains unverified. This does not approve the full campaign port. The dated proposal below records the original planning boundary.
 
 Decision recorded October 27, 2026, Asia/Manila. John Francis Espiritu reported the professor's requirement to develop the game in **C** and requested **Windows-first testing with Linux support**. He authorized this documentation revision and its GitHub push. This does not authorize implementing the port, installing tools, or reducing the campaign.

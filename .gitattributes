@@ -1,1 +1,2 @@
 scripts/run_movement_linux.sh text eol=lf
+scripts/*.sh text eol=lf

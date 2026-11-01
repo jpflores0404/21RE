@@ -41,13 +41,13 @@ Use Concept -> Simple example -> Project example -> Developer attempt -> Review 
 
 ## Keep the code understandable
 
-- Prefer Python's standard library, plain functions, dictionaries, lists, and small state-holding classes. Reuse working map, collision, inspection, and drawing code where suitable.
+- Use C17 for new game implementation, following the professor's requirement recorded October 27. Prefer plain functions, explicit structs and bounded arrays. The Python prototype is inherited reference material. Reuse working map, collision, inspection and drawing concepts where suitable.
 - Explain why a new abstraction is necessary. Defer generic puzzle engines, plugin systems, distributed frameworks, elaborate class hierarchies, and optional features unless a specific approved requirement needs them.
 - Separate networking, authoritative rules/state, terminal rendering, and content. Keep rule tests independent of terminal imports.
 - The intended architecture has one authoritative server and exactly two clients. Clients send intentions, such as movement or an answer. The server validates them, changes state, and sends each player only permitted information.
 - Puzzle solutions and partner secrets stay out of client payloads and client-side validation. A public educational repository is not a secret vault; the boundary concerns runtime behavior and messages.
 - Validate network message type, fields, types, lengths, identity, ownership, legal actions, and current stage before state changes. Treat valid JSON as untrusted input.
-- Use one understandable owner for authoritative state, preferably a single event loop if approved. Explain queue-based thread communication if retained. Use `time.monotonic()` for deadlines.
+- Use one understandable owner for authoritative state, a single server event loop under the October 31 approved plan. Use a monotonic platform clock for elapsed deadlines.
 - Keep wrong answers retryable, disconnections explicit, and timed failure recoverable at the current level/checkpoint.
 - Preserve terminal size handling, keyboard navigation, clean shutdown, and readable clues without relying on color alone.
 
@@ -76,4 +76,4 @@ Include the player's experience, input-to-output flow, actual OS concept demonst
 
 ## Current implementation boundary
 
-The October 23 review authorized cloning, analysis, project-memory preservation, shared instructions, and a proposed step-by-step plan. John confirmed check-ins of Oct 26/28 at 20%, Nov 4/9/11 at 50%, Nov 16/18 at 70%, and Nov 23/25 at 100%. This did **not** authorize replacing the peer-to-peer design, changing puzzles, or implementing missing maps. The implementation plan and architecture changes still await approval. Update this paragraph when the developers explicitly approve a phase and record that decision in project memory.
+On October 31, 2026, John explicitly approved `docs/plans/2026-10-31_MAPS_1_2_MILESTONE.md`: AI-assisted C implementation with subagents, one background authoritative server and two visible socket clients, main menu/tutorial, six room layouts, completed Maps 1-2 puzzles and a walkable unfinished Map 3 preview. The approved dependency is a pinned cJSON source copy. Build Windows locally only and publish source, necessary documentation and the Linux executable after verification. The milestone is named 50%; student review, teach-back and professor acceptance are separate evidence. Full Map 3 puzzles, gas and final campaign victory are outside this approval. Preserve existing Windows executables locally and keep all Windows executables out of GitHub.

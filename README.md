@@ -1,10 +1,18 @@
-> **Current direction, October 28, 2026:** The professor requires C, with Windows-first testing and Linux acceptance. See [the C implementation plan](docs/C_IMPLEMENTATION_PLAN.md). The first standalone C movement demo is implemented; the full campaign port is future work. The Python run commands below describe the inherited prototype.
+> **Current direction, November 2, 2026:** The C Maps 1–2 milestone is implemented, with six room layouts, an authoritative TCP server, two clients, menu/tutorial, private clues and a walkable unfinished Map 3. See the [run guide](docs/CAMPAIGN_RUN_GUIDE.md), [approved scope](docs/plans/2026-10-31_MAPS_1_2_MILESTONE.md), and [verification report](docs/progress_reports/2026-11-02_maps_1_2_milestone.md). The Python commands below describe the inherited prototype.
 
 # 2R1E: Two Rooms, One Exit
 
+## Current C milestone
+
+Linux x86_64: run `./releases/linux-x86_64/2r1e` in two terminals, choose Host in one and Join in the other, and use `127.0.0.1` with matching ports. If needed, first run `chmod +x releases/linux-x86_64/2r1e`. The host starts the background server automatically. Run `./releases/linux-x86_64/2r1e --self-test` for the C checks.
+
+Windows local output is `submissions/game/2r1e.exe`. Windows executables are excluded from GitHub. The final native build passes rule, protocol, full socket campaign and controlled console checks. See the run guide for build commands and controls.
+
+Maps 1–2 define John's named 50% milestone. Map 3 puzzles, gas and final victory are unfinished. Automated checks do not establish student understanding, professor acceptance or physical two-computer LAN performance. The [feature notes](docs/features/campaign_contracts.md) link the new modules to their responsibilities; rules, networking and interface have separate detailed explanations.
+
 ## First C movement demo and Week 1 submission
 
-The [C demo](src/movement_demo.c) supports WASD movement, terminal boundaries, resizing and clean exit. See the [build and run guide](docs/MOVEMENT_DEMO.md) and [Linux and Windows code explanation](docs/LINUX_WINDOWS_MOVEMENT_GUIDE.md). Windows checks passed; Linux compilation and terminal acceptance remain unverified. On Linux with a C compiler, use `sh scripts/run_movement_linux.sh --self-test` and then `sh scripts/run_movement_linux.sh`.
+The earlier [C demo](src/movement_demo.c) supports WASD movement, terminal boundaries, resizing and clean exit. See the [build and run guide](docs/MOVEMENT_DEMO.md) and [Linux and Windows code explanation](docs/LINUX_WINDOWS_MOVEMENT_GUIDE.md). Its Linux executable was separately built and checked before this milestone. On Linux with a C compiler, use `sh scripts/run_movement_linux.sh --self-test` and then `sh scripts/run_movement_linux.sh`.
 
 The [game design draft](docs/deliverables/2026-10-28_GAME_DESIGN_DRAFT.docx) contains map sketches and proposed puzzles. The [Word code guide](docs/deliverables/C_MOVEMENT_LINUX_WINDOWS_GUIDE.docx) explains the movement source. The [actual Week 1 report draft](docs/progress_reports/2026-10-28_submission_draft.md) separates implemented behavior from future work. These drafts still need developer review and missing identification fields before submission.
 

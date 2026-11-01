@@ -1,5 +1,7 @@
 # Two-developer learning and implementation roadmap
 
+> October 31 approved milestone: [the Maps 1 and 2 plan](plans/2026-10-31_MAPS_1_2_MILESTONE.md) now governs the next C build. John approved Maps 1-2 puzzles, three map layouts, an unfinished Map 3 preview, menu/tutorial and localhost networking as the named 50% milestone. The calendar remains unchanged; older Python-specific steps and the previous Map 1 at 50% / Map 2 at 70% boundary below are historical proposals.
+
 > October 28 update: [the C implementation revision](C_IMPLEMENTATION_PLAN.md) supersedes the Python-specific future modules and tooling below. The first standalone movement demo was explicitly approved and implemented as an early Week 1 exception; see [its feature record](features/movement_demo.md). The remaining campaign steps still require approval.
 
 **Status: proposed implementation plan, awaiting approval.** The grading calendar below was explicitly confirmed by John Francis Espiritu on October 23, 2026. Approval of dates does not approve code changes or campaign reductions.
