@@ -297,10 +297,8 @@ static void join_game(Socket socket)
 
 int main(void)
 {
-    if (!net_start()) { fputs("Socket startup failed.\n", stderr); return 1; }
     if (!terminal_open()) {
         terminal_close();
-        net_stop();
         fputs("Open 2R1E in an interactive terminal.\n", stderr);
         return 1;
     }
@@ -331,6 +329,5 @@ int main(void)
         previous = 0;
     }
     terminal_close();
-    net_stop();
     return 0;
 }

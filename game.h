@@ -2,7 +2,6 @@
 #define GAME_H
 
 #include <stddef.h>
-#include <stdint.h>
 
 #define MAP_WIDTH 49
 #define MAP_HEIGHT 17
@@ -39,7 +38,7 @@ typedef struct {
     size_t length;
 } Controls;
 
-typedef intptr_t Socket;
+typedef int Socket;
 #define NO_SOCKET ((Socket)-1)
 typedef struct {
     Socket socket;
@@ -65,8 +64,6 @@ int terminal_size(int *width, int *height);
 int terminal_draw(const char *text);
 int terminal_stopping(void);
 
-int net_start(void);
-void net_stop(void);
 int valid_address(const char *address);
 int parse_port(const char *text, unsigned short *port);
 void local_addresses(char *text, size_t capacity);
