@@ -1,6 +1,6 @@
 # 2R1E: Two Rooms, One Exit
 
-A two-player terminal escape game in C17. Explore separate areas, share clues by speaking to your partner, and solve three maps. There is no in-game chat.
+A two-player terminal escape game in C17. Explore separate areas, share clues by speaking to your partner, and solve three maps.
 
 ## Run on Linux
 
@@ -28,7 +28,7 @@ Both players need the same game version and a network that allows connections be
 2. Player 1 tells Player 2 the address and port and waits for the connection.
 3. Player 2 chooses **Join game** and enters that same host address and port.
 
-The host's firewall must allow incoming TCP connections on the chosen port. For two terminals on the same Linux computer, use `127.0.0.1` and a matching port. For separate computers, use the host's LAN address. If either player disconnects, start a new session.
+The host's firewall must allow incoming TCP connections on the chosen port. Use the host's LAN address. If either player disconnects, start a new session.
 
 ## Controls
 
@@ -45,9 +45,9 @@ Stand beside an object, face it, and press E. When `Answer>` appears, type the a
 
 Both players must use their own `E` exit object to advance on each map. After winning, press Enter on each terminal to return to the menu.
 
-## Answer keys: spoilers
+## Answer keys to puzzles
 
-Complete these steps in order. Player 1 is Host; Player 2 is Join.
+Player 1 is Host; Player 2 is Join.
 
 | Map | Player | Object | Answer or action |
 |---|---|---|---|
@@ -62,5 +62,3 @@ Complete these steps in order. Player 1 is Host; Player 2 is Join.
 | 3 | 1 | A, authorization terminal | Face it and press E after clearance |
 | 3 | 2 | S, mechanical safety release | Face it and press E after clearance |
 | 3 | Both | Their own E exit | Face it and press E to win |
-
-Map 3 authorization and safety release can be completed in either order after clearance.
